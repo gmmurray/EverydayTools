@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css\bootstrap\bootstrap.min.css">
+  <link rel="shortcut icon" href="images\shortcut_icon1.png"/>
   <title>Everyday Tools</title>
 </head>
 
@@ -15,35 +14,101 @@
     <h1 class="display-4">Everyday Tools</h1>
   </div>
 
+  <!-- TAB NAV -->
   <ul class="nav nav-tabs" id="myTab" role="tablist">
+
+    <!-- HOME TAB -->
     <li class="nav-item">
-      <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Home</a>
+      <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home"
+        aria-selected="true">Home</a>
     </li>
 
+    <!--FOOD TAB -->
     <li class="nav-item">
-      <a class="nav-link" id="second-tab" data-toggle="tab" href="#second" role="tab" aria-controls="second" aria-selected="false">Second Tab</a>
+      <a class="nav-link" id="food-tab" data-toggle="tab" href="#food" role="tab" aria-controls="food"
+        aria-selected="false">Food Weight Converter</a>
     </li>
 
+    <!-- GAS TAB -->
     <li class="nav-item">
-      <a class="nav-link" id="third-tab" data-toggle="tab" href="#third" role="tab" aria-controls="third" aria-selected="false">Third Tab</a>
+      <a class="nav-link" id="gas-tab" data-toggle="tab" href="#gas" role="tab" aria-controls="gas"
+        aria-selected="false">Gas Prices</a>
     </li>
   </ul>
 
+  <!-- TAB CONTENT -->
   <div class="tab-content" id="myTabContent">
+
+    <!-- HOME TAB -->
     <div class="tab-pane fade show active m-4" id="home" role="tabpanel" aria-labelledby="home-tab">
-      Welcome to Everyday Tools, a site I am planning to continue updating with random
-      yet useful tools. This project was created so I can practice Javascript, HTML, CSS, and Bootstrap
-      while also simplifying a few tasks. To learn about me you can <a href="gregmurray.org">visit my website</a>
-      and to provide feedback on this website you can <a href="https://github.com/gmmurray">visit my github.</a>
+      <div class="row justify-content-center">
+        <div class="col-8">
+          Welcome to Everyday Tools, a site I am planning to continue updating with random
+          yet useful tools. This project was created so I can practice Javascript, HTML, CSS, and Bootstrap
+          while also simplifying a few tasks. To learn about me you can <a href="https://gmmurray.github.io/">visit my
+            website</a>
+          and to provide feedback on this website you can <a href="https://github.com/gmmurray">visit my github.</a>
+        </div>
+      </div>
+
+
     </div>
 
-    <div class="tab-pane fade" id="second" role="tabpanel" aria-labelledby="second-tab">
-      this is a test
+    <!--FOOD TAB -->
+    <div class="tab-pane fade" id="food" role="tabpanel" aria-labelledby="food-tab">
+      <div class="row justify-content-center">
+        <div class="col-8 text-center">
+            <h3>Food Weight Converter</h3>
+        </div>
+      </div>
     </div>
-    <div class="tab-pane fade" id="third" role="tabpanel" aria-labelledby="third-tab">
-      this is another test
+
+    <!-- GAS TAB -->
+    <div class="tab-pane fade" id="gas" role="tabpanel" aria-labelledby="gas-tab">
+        <div class="row justify-content-center">
+            <div class="col-8 text-center">
+                <h3>Gas Budget</h3>
+            </div>
+          </div>
     </div>
   </div>
+
+  <!-- Footer -->
+<footer class="page-footer font-small fixed-bottom bg-dark">
+    <div class="bg-primary text-light">
+      <div class="container text-center">
+          <div class="row">
+              <div class="col">
+                  <h5 class="font-weight-bold mt-2 mb-2">My Links</h5>
+              </div>
+            </div>
+      </div>
+    </div>
+  <div class="container text-center">
+      <div class="row mt-2">  
+        <div class="col">
+          <ul class="list-unstyled">
+            <li>
+              <a href="https://gregmurray.org">Home Website</a>
+            </li>
+            <li>
+              <a href="https://github.com/gmmurray">GitHub</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
